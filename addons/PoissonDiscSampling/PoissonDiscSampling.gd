@@ -22,6 +22,7 @@ var _rng: RandomNumberGenerator
 #		-a Vector3 with x,y as the position and z as the radius of the circle
 # retries - maximum number of attempts to look around a sample point, reduce this value to speed up generation
 # start_pos - optional parameter specifying the starting point
+# rng - an optional RandomNumberGenerator to use. If not specified a new RandomNumberGenerator will be created and randomized.
 #
 # returns an Array of Vector2D with points in the order of their discovery
 func generate_points(radius: float, sample_region_shape, retries: int, start_pos := Vector2(INF, INF), rng: RandomNumberGenerator = null ) -> Array:
